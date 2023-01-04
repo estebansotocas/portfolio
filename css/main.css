@@ -1,0 +1,47 @@
+@import url(http://fonts.googleapis.com/css?family=roboto);
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "roboto", Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #001122;
+}
+
+.container {
+  width: 95% !important;
+  display: block;
+  margin: auto;
+  max-width: 1200px !important;
+}
+.container.second {
+  max-width: 800px !important;
+}
+
+.word-card {
+  background-image: url(../images/world.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 350px;
+  height: 350px;
+  position: relative;
+}
+
+#follower {
+  position: relative;
+  width: 45px;
+  height: 45px;
+}
+#follower img {
+  width: 60px;
+  height: 60px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}/*# sourceMappingURL=main.css.map */

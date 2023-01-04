@@ -1,0 +1,21 @@
+@import url(http://fonts.googleapis.com/css?family=roboto);
+
+$dark:#001122; 
+
+* { margin: 0; padding: 0; font-family: "roboto", Helvetica, sans-serif;}
+body{ 
+    margin: 0; 
+    padding: 0; 
+    overflow: hidden;
+    background-color: $dark; 
+} 
+.container{
+    width: 95%  !important;
+    display: block;
+    margin: auto;
+    max-width: 1200px !important;
+    &.second{
+        max-width: 800px !important;
+    }
+} 
+  

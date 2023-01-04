@@ -1,0 +1,22 @@
+.word-card{
+    background-image: url(../images/world.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 350px;
+    position: relative;
+}
+
+#follower{
+    position : relative;
+    width: 45px;
+    height: 45px;
+    img{
+        width: 60px;
+        height: 60px;
+        object-fit: contain;
+        object-position: center;
+    }
+ }
+ 
