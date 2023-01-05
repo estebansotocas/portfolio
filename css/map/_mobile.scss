@@ -1,5 +1,9 @@
 /* mobile  */
 @media only screen and (max-width: 768px) {
+    .sidebar{
+        border-bottom: 1px solid $border;
+        border: 0px;
+    }
    h1{
     text-align: center;
    }
@@ -19,6 +23,17 @@
             margin: 20px auto;
         }
 
+    }
+    .system{
+        display: block;
+    }
+
+    .text-animation{
+        padding: 0px;
+        text-align: center;
+        max-width: 80%;
+        margin: auto;
+        display: block;
     }
 
 }
