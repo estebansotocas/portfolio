@@ -8,7 +8,6 @@
 body {
   margin: 0;
   padding: 0;
-  overflow: hidden;
   background-color: #001122;
   font-family: "East Sea Dokdo", cursive;
 }
@@ -50,7 +49,7 @@ p a:hover {
   background-size: contain;
   background-repeat: no-repeat;
   width: 95%;
-  height: 80vh;
+  height: 75vh;
   margin: 5vh auto;
   display: block;
   position: relative;
@@ -82,26 +81,26 @@ p a:hover {
   transform-origin: center;
 }
 .star.react {
-  top: 10vh;
-  left: 60%;
+  top: 15vh;
+  left: 65%;
   width: 40px;
 }
 .star.jquery {
-  top: 30vh;
-  left: 67%;
+  top: 35vh;
+  left: 73%;
   width: 110px;
 }
 .star.python {
-  top: 50vh;
-  left: 80%;
+  top: 55vh;
+  left: 83%;
 }
 .star.php {
-  top: 70vh;
-  left: 75%;
+  top: 75vh;
+  left: 78%;
 }
 .star.mysql {
-  top: 80vh;
-  left: 65%;
+  top: 85vh;
+  left: 68%;
   width: 80px;
 }
 
@@ -110,7 +109,7 @@ p a:hover {
   text-transform: uppercase;
   color: #fff;
   position: absolute;
-  top: 15vh;
+  top: 20vh;
   left: 30%;
   display: block;
   -webkit-animation: beats 1.8s infinite;
@@ -118,27 +117,27 @@ p a:hover {
   transform-origin: center;
 }
 .soft_skills li:nth-child(2) {
-  top: 25vh;
+  top: 30vh;
   left: 23%;
 }
 .soft_skills li:nth-child(3) {
-  top: 35vh;
+  top: 40vh;
   left: 18%;
 }
 .soft_skills li:nth-child(4) {
-  top: 50vh;
+  top: 55vh;
   left: 13%;
 }
 .soft_skills li:nth-child(5) {
-  top: 65vh;
+  top: 70vh;
   left: 18%;
 }
 .soft_skills li:nth-child(6) {
-  top: 75vh;
+  top: 80vh;
   left: 23%;
 }
 .soft_skills li:nth-child(7) {
-  top: 85vh;
+  top: 90vh;
   left: 30%;
 }
 
@@ -163,5 +162,41 @@ p a:hover {
   }
   to {
     transform: none;
+  }
+}
+/* mobile  */
+@media only screen and (max-width: 768px) {
+  h1 {
+    text-align: center;
+  }
+  .word-card {
+    padding: 0px 10px;
+    height: 40vh;
+  }
+  .soft_skills {
+    width: 80%;
+    margin: auto;
+  }
+  .soft_skills li {
+    font-size: 12px;
+    margin-bottom: 10px !important;
+    position: relative;
+    width: 100%;
+    top: 0px !important;
+    left: 0px !important;
+    text-align: center;
+  }
+  .galaxy {
+    -moz-column-count: 2;
+         column-count: 2;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
+  .galaxy .star {
+    position: relative;
+    width: 50px;
+    top: 0 !important;
+    left: 0px !important;
+    margin: 20px auto;
   }
 }/*# sourceMappingURL=main.css.map */

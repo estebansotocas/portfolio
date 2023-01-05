@@ -1,0 +1,38 @@
+/* mobile  */
+@media only screen and (max-width: 768px) {
+   h1{
+    text-align: center;
+   }
+   .word-card{
+    padding: 0px 10px;
+    height: 40vh;
+   }
+   .soft_skills {
+        width: 80%;
+        margin: auto;
+        li{
+            font-size: 12px;
+            margin-bottom: 10px !important;
+            position: relative;
+            width: 100%;
+            top: 0px !important;
+            left: 0px !important;
+            text-align: center;
+        }
+   
+    } 
+
+    .galaxy{
+        column-count: 2;
+        column-gap: 10px;
+        .star{
+            position: relative;
+            width: 50px;
+            top: 0 !important;
+            left: 0px !important;
+            margin: 20px auto;
+        }
+
+    }
+
+}

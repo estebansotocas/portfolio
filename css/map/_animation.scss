@@ -4,7 +4,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     width: 95%;
-    height: 80vh;
+    height: 75vh;
     margin: 5vh auto;
     display: block;
     position: relative;
@@ -36,29 +36,29 @@
 	transform-origin: center;
     
     &.react{
-        top: 10vh;
-        left: 60%;
+        top: 15vh;
+        left: 65%;
         width: 40px;
     }
 
     &.jquery{
-        top: 30vh;
-        left: 67%;
+        top: 35vh;
+        left: 73%;
         width: 110px;
     }
 
     &.python{
-        top: 50vh;
-        left: 80%;
+        top: 55vh;
+        left: 83%;
     }
     &.php{
-        top: 70vh;
-        left: 75%;
+        top: 75vh;
+        left: 78%;
     }
 
     &.mysql{
-        top: 80vh;
-        left: 65%;
+        top: 85vh;
+        left: 68%;
         width: 80px;
     }
 
@@ -71,33 +71,33 @@
         text-transform: uppercase;
         color: #fff;
         position: absolute;
-        top: 15vh;
+        top: 20vh;
         left: 30%;
         display: block;
         animation: beats 1.8s infinite;
         transform-origin: center;
         &:nth-child(2){
-            top: 25vh;
+            top: 30vh;
             left: 23%;
         }
         &:nth-child(3){
-            top: 35vh;
+            top: 40vh;
             left: 18%;
         }
         &:nth-child(4){
-            top: 50vh;
+            top: 55vh;
             left: 13%;
         }
         &:nth-child(5){
-            top: 65vh;
+            top: 70vh;
             left: 18%;
         }
         &:nth-child(6){
-            top: 75vh;
+            top: 80vh;
             left: 23%;
         }
         &:nth-child(7){
-            top: 85vh;
+            top: 90vh;
             left: 30%;
         }
 
