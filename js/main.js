@@ -1,4 +1,7 @@
-var mouseX = 0, mouseY = 0, limitX = 350-65, limitY = 350-65;
+var mouseX = 0, mouseY = 0, limitX = 65, limitY = 65;
+
+limitX =  $('.word-card').width() - limitX;
+limitY =   $('.word-card').height() - limitY;
 
 $(window).mousemove(function(e){
   var offset = $('.follow').offset();

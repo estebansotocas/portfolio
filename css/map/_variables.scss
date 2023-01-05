@@ -1,6 +1,9 @@
-@import url(http://fonts.googleapis.com/css?family=roboto);
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
 
-$dark:#001122; 
+$dark:#001122;
+$white:#fff; 
+$cream:#f0f3ff;
+$pink: #BD1168;
 
 * { margin: 0; padding: 0; font-family: "roboto", Helvetica, sans-serif;}
 body{ 
@@ -8,14 +11,35 @@ body{
     padding: 0; 
     overflow: hidden;
     background-color: $dark; 
+    font-family: 'East Sea Dokdo', cursive;
 } 
 .container{
-    width: 95%  !important;
+    width: 100%  !important;
     display: block;
     margin: auto;
-    max-width: 1200px !important;
-    &.second{
-        max-width: 800px !important;
-    }
 } 
+
+img{
+    max-width: 100%;
+}
   
+//font
+h1{
+    font-size: 28px;
+    padding: 20px;
+    color: $white;
+}
+p{
+    padding: 0px 20px 10px;
+    font-size: 12px;
+    font-weight: 700;
+    color: $cream;
+    a{
+        text-decoration: none;
+        color: $cream;
+        text-decoration: none;
+        &:hover{
+            color: $pink;
+        }
+    }
+}

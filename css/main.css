@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=roboto);
+@import url("https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -10,16 +10,38 @@ body {
   padding: 0;
   overflow: hidden;
   background-color: #001122;
+  font-family: "East Sea Dokdo", cursive;
 }
 
 .container {
-  width: 95% !important;
+  width: 100% !important;
   display: block;
   margin: auto;
-  max-width: 1200px !important;
 }
-.container.second {
-  max-width: 800px !important;
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 28px;
+  padding: 20px;
+  color: #fff;
+}
+
+p {
+  padding: 0px 20px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #f0f3ff;
+}
+p a {
+  text-decoration: none;
+  color: #f0f3ff;
+  text-decoration: none;
+}
+p a:hover {
+  color: #BD1168;
 }
 
 .word-card {
@@ -27,21 +49,119 @@ body {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  width: 350px;
-  height: 350px;
+  width: 95%;
+  height: 80vh;
+  margin: 5vh auto;
+  display: block;
   position: relative;
 }
-
-#follower {
+.word-card #follower {
   position: relative;
   width: 45px;
   height: 45px;
 }
-#follower img {
+.word-card #follower img {
   width: 60px;
   height: 60px;
   -o-object-fit: contain;
      object-fit: contain;
   -o-object-position: center;
      object-position: center;
+  z-index: 99;
+}
+
+/* beats Animation  */
+.star {
+  display: block;
+  position: absolute;
+  top: 60vh;
+  left: 80%;
+  width: 60px;
+  -webkit-animation: beats 1.8s infinite;
+          animation: beats 1.8s infinite;
+  transform-origin: center;
+}
+.star.react {
+  top: 10vh;
+  left: 60%;
+  width: 40px;
+}
+.star.jquery {
+  top: 30vh;
+  left: 67%;
+  width: 110px;
+}
+.star.python {
+  top: 50vh;
+  left: 80%;
+}
+.star.php {
+  top: 70vh;
+  left: 75%;
+}
+.star.mysql {
+  top: 80vh;
+  left: 65%;
+  width: 80px;
+}
+
+.soft_skills li {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  top: 15vh;
+  left: 30%;
+  display: block;
+  -webkit-animation: beats 1.8s infinite;
+          animation: beats 1.8s infinite;
+  transform-origin: center;
+}
+.soft_skills li:nth-child(2) {
+  top: 25vh;
+  left: 23%;
+}
+.soft_skills li:nth-child(3) {
+  top: 35vh;
+  left: 18%;
+}
+.soft_skills li:nth-child(4) {
+  top: 50vh;
+  left: 13%;
+}
+.soft_skills li:nth-child(5) {
+  top: 65vh;
+  left: 18%;
+}
+.soft_skills li:nth-child(6) {
+  top: 75vh;
+  left: 23%;
+}
+.soft_skills li:nth-child(7) {
+  top: 85vh;
+  left: 30%;
+}
+
+@-webkit-keyframes beats {
+  from {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  to {
+    transform: none;
+  }
+}
+
+@keyframes beats {
+  from {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  to {
+    transform: none;
+  }
 }/*# sourceMappingURL=main.css.map */

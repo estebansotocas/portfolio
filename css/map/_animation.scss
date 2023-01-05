@@ -3,20 +3,110 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    width: 350px;
-    height: 350px;
+    width: 95%;
+    height: 80vh;
+    margin: 5vh auto;
+    display: block;
     position: relative;
+    #follower{
+        position : relative;
+        width: 45px;
+        height: 45px;
+        img{
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+            object-position: center;
+            z-index: 99;
+        } 
+     }
 }
 
-#follower{
-    position : relative;
-    width: 45px;
-    height: 45px;
-    img{
-        width: 60px;
-        height: 60px;
-        object-fit: contain;
-        object-position: center;
-    }
- }
+
  
+
+ /* beats Animation  */
+ .star{
+    display: block;
+    position: absolute;
+    top: 60vh;
+    left: 80%;
+    width: 60px;
+    animation: beats 1.8s infinite;
+	transform-origin: center;
+    
+    &.react{
+        top: 10vh;
+        left: 60%;
+        width: 40px;
+    }
+
+    &.jquery{
+        top: 30vh;
+        left: 67%;
+        width: 110px;
+    }
+
+    &.python{
+        top: 50vh;
+        left: 80%;
+    }
+    &.php{
+        top: 70vh;
+        left: 75%;
+    }
+
+    &.mysql{
+        top: 80vh;
+        left: 65%;
+        width: 80px;
+    }
+
+    
+ }
+
+.soft_skills{
+    li{
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #fff;
+        position: absolute;
+        top: 15vh;
+        left: 30%;
+        display: block;
+        animation: beats 1.8s infinite;
+        transform-origin: center;
+        &:nth-child(2){
+            top: 25vh;
+            left: 23%;
+        }
+        &:nth-child(3){
+            top: 35vh;
+            left: 18%;
+        }
+        &:nth-child(4){
+            top: 50vh;
+            left: 13%;
+        }
+        &:nth-child(5){
+            top: 65vh;
+            left: 18%;
+        }
+        &:nth-child(6){
+            top: 75vh;
+            left: 23%;
+        }
+        &:nth-child(7){
+            top: 85vh;
+            left: 30%;
+        }
+
+
+    }
+}
+ 
+@keyframes beats {
+    from { transform: none; }
+    50% { transform: scale(1.2); }
+    to { transform: none; }
+}
