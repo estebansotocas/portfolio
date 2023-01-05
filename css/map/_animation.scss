@@ -110,3 +110,39 @@
     50% { transform: scale(1.2); }
     to { transform: none; }
 }
+
+
+/* Text Animation */
+.text-animation{
+    padding: 100px 0 0;
+    font-size: 22px;
+    letter-spacing: 2px;
+    line-height: 34px;
+    color: $white;
+    width: 100%;
+    max-width: 350px;
+    transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+@keyframes scale {
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  span {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(4px);
+  }
+  
+ 
+  
+  @keyframes fade-in {
+    100% {
+      opacity: 1;
+      filter: blur(0);
+    }
+  }
+  

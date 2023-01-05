@@ -1,0 +1,60 @@
+.sidebar{
+    display: block;
+    height: 100vh;
+    width: 100%;
+    padding: 50px 0 ;
+    border-right: 1px solid $border;
+    background-color: $black;
+    h3{
+        padding: 10px 20px;
+        color: $white;
+        background-color: $border;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    ul{
+        padding: 20px;
+        li{
+            list-style: none;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 14px;
+            color: $white;
+            position: relative;
+            margin-bottom: 15px ;
+            &:after{
+                content: "\2774";
+                font-size: 15px;
+                position: absolute;
+                top: 5;
+                left: 0;
+            }
+            &:before{
+                content: "\2775";
+                font-size: 15px;
+                position: absolute;
+                top: 5;
+                right: 0;
+            }
+            a{
+                color: $white;
+                svg{
+                    height: 15px;
+                    width: 15px;
+                    margin: -5px 10px 0 0;
+                    path{
+                        fill: $white !important;
+                    }
+                }
+                &:hover{
+                    color: $pink;
+                    svg{
+                        path{
+                            fill: $pink !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

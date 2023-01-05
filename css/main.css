@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap");
 * {
   margin: 0;
@@ -9,11 +10,11 @@ body {
   margin: 0;
   padding: 0;
   background-color: #001122;
-  font-family: "East Sea Dokdo", cursive;
 }
 
 .container {
   width: 100% !important;
+  max-width: 100% !important;
   display: block;
   margin: auto;
 }
@@ -22,10 +23,17 @@ img {
   max-width: 100%;
 }
 
+.system {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 h1 {
-  font-size: 28px;
+  font-size: 48px;
   padding: 20px;
   color: #fff;
+  font-family: "East Sea Dokdo", cursive;
+  text-align: right;
 }
 
 p {
@@ -41,6 +49,10 @@ p a {
 }
 p a:hover {
   color: #BD1168;
+}
+
+a {
+  text-decoration: none !important;
 }
 
 .word-card {
@@ -164,6 +176,109 @@ p a:hover {
     transform: none;
   }
 }
+/* Text Animation */
+.text-animation {
+  padding: 100px 0 0;
+  font-size: 22px;
+  letter-spacing: 2px;
+  line-height: 34px;
+  color: #fff;
+  width: 100%;
+  max-width: 350px;
+  transform: scale(0.94);
+  -webkit-animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+          animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+@-webkit-keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+span {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+@-webkit-keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+.sidebar {
+  display: block;
+  height: 100vh;
+  width: 100%;
+  padding: 50px 0;
+  border-right: 1px solid #102a44;
+  background-color: #000C1D;
+}
+.sidebar h3 {
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #102a44;
+  font-size: 18px;
+  font-weight: 700;
+}
+.sidebar ul {
+  padding: 20px;
+}
+.sidebar ul li {
+  list-style: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 14px;
+  color: #fff;
+  position: relative;
+  margin-bottom: 15px;
+}
+.sidebar ul li:after {
+  content: "❴";
+  font-size: 15px;
+  position: absolute;
+  top: 5;
+  left: 0;
+}
+.sidebar ul li:before {
+  content: "❵";
+  font-size: 15px;
+  position: absolute;
+  top: 5;
+  right: 0;
+}
+.sidebar ul li a {
+  color: #fff;
+}
+.sidebar ul li a svg {
+  height: 15px;
+  width: 15px;
+  margin: -5px 10px 0 0;
+}
+.sidebar ul li a svg path {
+  fill: #fff !important;
+}
+.sidebar ul li a:hover {
+  color: #BD1168;
+}
+.sidebar ul li a:hover svg path {
+  fill: #BD1168 !important;
+}
+
 /* mobile  */
 @media only screen and (max-width: 768px) {
   h1 {
@@ -172,19 +287,6 @@ p a:hover {
   .word-card {
     padding: 0px 10px;
     height: 40vh;
-  }
-  .soft_skills {
-    width: 80%;
-    margin: auto;
-  }
-  .soft_skills li {
-    font-size: 12px;
-    margin-bottom: 10px !important;
-    position: relative;
-    width: 100%;
-    top: 0px !important;
-    left: 0px !important;
-    text-align: center;
   }
   .galaxy {
     -moz-column-count: 2;

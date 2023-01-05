@@ -1,26 +1,18 @@
-var mouseX = 0, mouseY = 0, limitX = 65, limitY = 65;
 
-limitX =  $('.word-card').width() - limitX;
-limitY =   $('.word-card').height() - limitY;
+let span_text = "";
+$( document ).ready(function() {
+  const text = $('.text-animation').text();
 
-$(window).mousemove(function(e){
-  var offset = $('.follow').offset();
-   mouseX = Math.min(e.pageX - offset.left, limitX);
-   mouseY = Math.min(e.pageY - offset.top, limitY);
-   if (mouseX < 0) mouseX = 0;
-   if (mouseY < 0) mouseY = 0;
+  const words = text.split(' ');
 
-  
+  words.forEach(spanText);
+  $('.text-animation').html(span_text);
+
+
 });
 
-// cache the selector
-var follower = $("#follower");
-var xp = 0, yp = 0;
-var loop = setInterval(function(){
-    // change 12 to alter damping higher is slower
-    xp += (mouseX - xp) / 12;
-    yp += (mouseY - yp) / 12;
-    follower.css({left:xp, top:yp});
-    
-}, 30);
-
+function spanText(item, index) {
+  const seconds =  index/10;
+  const animation_text =  'animation: fade-in 0.8s '+seconds+'s forwards cubic-bezier(0.11, 0, 0.5, 0);';
+  span_text +=  "<span style='"+animation_text+"'>" + item + "</span> "; 
+}

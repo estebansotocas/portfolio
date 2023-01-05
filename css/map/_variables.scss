@@ -4,16 +4,19 @@ $dark:#001122;
 $white:#fff; 
 $cream:#f0f3ff;
 $pink: #BD1168;
+$border:#102a44;
+$black:#000C1D;
 
 * { margin: 0; padding: 0; font-family: "roboto", Helvetica, sans-serif;}
 body{ 
     margin: 0; 
     padding: 0; 
     background-color: $dark; 
-    font-family: 'East Sea Dokdo', cursive;
+   
 } 
 .container{
     width: 100%  !important;
+    max-width: 100% !important;
     display: block;
     margin: auto;
 } 
@@ -21,12 +24,19 @@ body{
 img{
     max-width: 100%;
 }
+
+.system{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
   
 //font
 h1{
-    font-size: 28px;
+    font-size: 48px;
     padding: 20px;
     color: $white;
+    font-family: 'East Sea Dokdo', cursive;
+    text-align: right;
 }
 p{
     padding: 0px 20px 10px;
@@ -42,3 +52,5 @@ p{
         }
     }
 }
+
+a{ text-decoration: none !important;}
